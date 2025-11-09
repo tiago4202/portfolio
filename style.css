@@ -1,0 +1,88 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        :root {
+            --color-text-dark: #1F2937;
+            --color-text-light: #F9FAFB;
+            --color-card-dark: #121421;
+            --color-card-light: #EFF6FF;
+            --color-accent: #FBBF24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .foto{
+            border-radius: 100%;
+        }
+
+        .dark {
+            background-color: #0d1117;
+            color: var(--color-text-light);
+        }
+        .dark .portfolio-card {
+            background-color: var(--color-card-dark);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dark .info-text { color: #D1D5DB; }
+        .dark .highlight-text { color: var(--color-accent); }
+        .dark .section-title { color: var(--color-text-light); }
+        .dark .about-text { color: #A1A1AA; }
+        .dark .section-bg { background-color: #121421; }
+        .dark .skill-card { background-color: #1E293B; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .dark .skill-title { color: var(--color-text-light); }
+        .dark footer { background-color: #121421; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+
+        .light {
+            background-color: #F3F4F6;
+            color: var(--color-text-dark);
+        }
+        .light .portfolio-card {
+            background-color: var(--color-card-light);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .light .info-text { color: #6B7280; }
+        .light .highlight-text { color: var(--color-text-dark); }
+        .light .nav-link { color: #4B5563; }
+        .light .section-title { color: var(--color-text-dark); }
+        .light .about-text { color: #4B5563; }
+        .light .section-bg { background-color: #FFFFFF; }
+        .light .skill-card { background-color: #F9FAFB; border: 1px solid rgba(0, 0, 0, 0.05); }
+        .light .skill-title { color: var(--color-text-dark); }
+        .light footer { background-color: #FFFFFF; border-top: 1px solid rgba(0, 0, 0, 0.05); }
+
+
+        #theme-toggle {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+        }
+
+        .photo-placeholder {
+            background-color: var(--color-accent);
+            aspect-ratio: 1 / 1; 
+            border: 3px solid transparent; 
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #121421;
+            font-weight: bold;
+        }
+        
+        .portfolio-card {
+            transition: background-color 0.5s, color 0.5s;
+            margin-bottom: 4rem; 
+        }
+        
